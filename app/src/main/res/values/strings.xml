@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zamówienie pizzy</string>
+
+    <string-array name="ciasto_array">
+        <item>Cienkie</item>
+        <item>Grube</item>
+        <item>Serowe</item>
+        <item>Na grubym spodzie</item>
+    </string-array>
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zamówienie pizzy"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rozmiar:"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/radioSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mała (25 cm)" />
+
+            <RadioButton
+                android:id="@+id/radioMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Średnia (30 cm)"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duża (40 cm)" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rodzaj ciasta:"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerDough"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodatki:"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkCheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extra ser" />
+
+        <CheckBox
+            android:id="@+id/checkHam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Szynka" />
+
+        <CheckBox
+            android:id="@+id/checkMushrooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pieczarki" />
+
+        <CheckBox
+            android:id="@+id/checkOlives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oliwki"
+            android:layout_marginBottom="12dp" />
+
+        <Switch
+            android:id="@+id/switchExtraCheese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ekstra ser za darmo (tylko przy Dużej)"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ilość:"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="1" />
+
+        <TextView
+            android:id="@+id/textQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ilość: 1"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adres dostawy:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ulica, numer, miasto"
+            android:inputType="textPostalAddress"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefon kontaktowy:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="np. 123456789"
+            android:inputType="phone"
+            android:maxLength="9"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uwagi (opcjonalnie):"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dodatkowe informacje..."
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:gravity="top"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Złóż zamówienie"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
